@@ -3,6 +3,11 @@ const path = require('path')
 const RSS = require('rss')
 const matter = require('gray-matter')
 
+/*
+  * This script generates an RSS feed from the markdown files in the `pages/posts` directory.
+  * It reads the frontmatter of each post and adds it to the feed.
+  * The feed is then written to `public/feed.xml`.
+*/
 async function generate() {
   const feed = new RSS({
     title: 'Your Name',
