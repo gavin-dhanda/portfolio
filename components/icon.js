@@ -1,10 +1,10 @@
 import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope } from 'react-icons/fa';
 
 const icons = {
-  github: FaGithub,
-  linkedin: FaLinkedin,
-  instagram: FaInstagram,
-  email: FaEnvelope
+  'github': FaGithub,
+  'linkedin': FaLinkedin,
+  'instagram': FaInstagram,
+  'email': FaEnvelope
 };
 
 const Icon = ({ name, size }) => {
