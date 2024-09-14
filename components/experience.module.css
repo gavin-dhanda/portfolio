@@ -38,6 +38,7 @@
   line-height: 1.6em;
   margin-bottom: 1.6em;
   transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
 }
 
 /* Have experience block grow on hover */
@@ -48,5 +49,14 @@
 
 .experience:hover .coolGradient {
   background-size: 100% 100%, 100% 100%;
+}
+
+.projectImage {
+  width: 13em;
+  border-radius: 18px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  margin:0;
+  margin-bottom: 2em;
+  margin-top: 2em;
 }
 
