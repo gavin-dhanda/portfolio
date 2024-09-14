@@ -13,4 +13,75 @@
   object-fit: cover;
   border-radius: 14px; /* Rounded corners */
   border: 2px solid #000000; /* Add border on hover */
+  transition: border 0.3s; /* Smooth transition */
+}
+
+.edgeImage {
+  animation: bobUpDown 5s infinite;
+}
+
+.midImage {
+  animation: bobMid 5s infinite;
+}
+
+@keyframes bobUpDown {
+  0%, 25%, 100% {
+    transform: scale(100%);
+  }
+  6.25%, 18.75% {
+    transform: scale(103%);
+  }
+}
+
+@keyframes bobMid {
+  0%, 25%, 50%, 100% {
+    transform: scale(100%);
+  }
+  31.25%, 43.75% {
+    transform: scale(103%);
+  }
+}
+
+.welcomeGradient {
+  /* Define the gradient background */
+  background:
+  linear-gradient(
+    to right,    
+    #d1fffb,
+    rgb(233, 251, 255)
+  ),
+  linear-gradient(
+    to right,    
+    rgb(179, 238, 251),
+    rgb(0, 167, 204),
+    rgb(179, 238, 251),
+    rgb(0, 167, 204)
+  );
+
+  /* Make the background clip to the text */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* For non-WebKit browsers */
+  background-clip: text;
+  color: transparent;
+
+  /* Initial state for the transition */
+  background-size: 0% 100%, 100% 100%;
+  background-repeat: no-repeat;
+  transition: background-size 800ms ease-in-out;
+}
+
+.welcomeGradient:hover {
+  background-size: 100% 100%, 100% 100%;
+}
+
+.iconContainer {
+  display: flex;
+  align-items: center; 
+  gap: 8px;
+}
+
+.iconContainer:hover {
+  transform: translateX(0.8em);
 }

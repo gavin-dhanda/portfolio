@@ -24,7 +24,7 @@
   /* Initial state for the transition */
   background-size: 0% 100%, 100% 100%;
   background-repeat: no-repeat;
-  transition: background-size 800ms ease-in-out;
+  transition: background-size 650ms ease-in-out;
 }
 
 .experience {

@@ -9,48 +9,48 @@ import styles from './index.module.css';
 
 # Gavin Dhanda
 
-<h2> Hi, I'm Gavin! </h2>
+<h2 className={styles.welcomeGradient}> Hi, I'm Gavin! </h2>
 
 <p> I'm a Junior at Brown University pursuing an Sc.B in Computer Science and an A.B. in Business Economics. I'm passionate about <b> software development</b>, <b>music</b>, and the <b>intersection of technology and finance</b>. If you have any questions or would like to connect, please reach out below. </p>
 
 <div className={styles.imageRow}>
   <div className={styles.imageContainer}>
-    <img src="/images/guitar.jpg" alt="Image 2" className={styles.secondImage}/>
+    <img src="/images/guitar.jpg" alt="Image 2" className={styles.edgeImage} />
   </div>
   <div className={styles.imageContainer}>
-    <img src="/images/ranch.jpg" alt="Image 3" className={styles.thirdImage}/>
+    <img src="/images/ranch.jpg" alt="Image 3" className={styles.midImage} />
   </div>
   <div className={styles.imageContainer}>
-    <img src="/images/golf.jpg" alt="Image 1" className={styles.leftImage}/>
+    <img src="/images/golf.jpg" alt="Image 1" className={styles.edgeImage} style={{ animationDelay: '2500ms' }}/>
   </div>
   
 </div>
 
 ---
 <div style={{ lineHeight: '0.2em' }}>
-<div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+<div className={styles.iconContainer}>
   <Icon name="linkedin" size="1.5em" />
-  <a href="https://linkedin.com/in/gavin-dhanda" target="_blank" rel="noopener noreferrer">
+  <a href="https://linkedin.com/in/gavin-dhanda" target="_blank" rel="noopener noreferrer" >
     @gavin-dhanda
   </a>
 </div>
 
-<div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-  <Icon name="github" size="1.5em" />
-  <a href="https://github.com/gavin-dhanda" target="_blank" rel="noopener noreferrer">
+<div className={styles.iconContainer}>
+  <Icon name="github" size="1.5em"/>
+  <a href="https://github.com/gavin-dhanda" target="_blank" rel="noopener noreferrer" >
     @gavin-dhanda
   </a>
 </div>
 
-<div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+<div className={styles.iconContainer}>
   <Icon name="instagram" size="1.5em" />
-  <a href="https://instagram.com/gavin_dhanda/" target="_blank" rel="noopener noreferrer">
+  <a href="https://instagram.com/gavin_dhanda/" target="_blank" rel="noopener noreferrer" >
     @gavin_dhanda
   </a>
 </div>
 
-<div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+<div className={styles.iconContainer}>
   <Icon name="email" size="1.5em" />
-  gavin_dhanda@brown.edu
+  gavin_dhanda@brown.edu 
 </div>
 </div>
