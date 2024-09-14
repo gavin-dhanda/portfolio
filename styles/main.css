@@ -63,21 +63,3 @@ img.next-image {
 .nav-line .nav-link {
   color: #69778c;
 }
-
-.experience {
-  background-color: rgba(211, 211, 211, 0.065); /* Light grey with transparency */
-  border-radius: 14px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Subtle shadow */
-  padding-inline-start: 40px; /* Left padding for text */
-  padding-inline-end: 40px; /* Right padding for text */
-  padding-top: 1%;
-  padding-bottom: 1%;
-  line-height: 1.6em;
-  margin-bottom: 1.6em;
-}
-
-/* Have experience block grow on hover */
-.experience:hover {
-  transform: scale(1.01);
-  box-shadow: 0 7px 14px rgba(0, 0, 0, 1)
-}

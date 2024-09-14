@@ -1,0 +1,52 @@
+.coolGradient {
+  /* Define the gradient background */
+  background: linear-gradient(to right,
+    rgb(179, 238, 251),
+    rgb(0, 167, 204),
+    rgb(162, 70, 255),
+    rgb(255, 112, 203),
+    rgb(255, 208, 238)
+  ),
+  linear-gradient(
+    to right,    
+    rgb(179, 238, 251),
+    rgb(0, 167, 204)
+  );
+
+  /* Make the background clip to the text */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* For non-WebKit browsers */
+  background-clip: text;
+  color: transparent;
+
+  /* Initial state for the transition */
+  background-size: 0% 100%, 100% 100%;
+  background-repeat: no-repeat;
+  transition: background-size 800ms ease-in-out;
+}
+
+.experience {
+  background-color: rgba(211, 211, 211, 0.065); /* Light grey with transparency */
+  border-radius: 14px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Subtle shadow */
+  padding-inline-start: 40px; /* Left padding for text */
+  padding-inline-end: 40px; /* Right padding for text */
+  padding-top: 1%;
+  padding-bottom: 1%;
+  line-height: 1.6em;
+  margin-bottom: 1.6em;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Have experience block grow on hover */
+.experience:hover {
+  transform: scale(1.02);
+  box-shadow: 0 7px 14px rgba(0, 0, 0, 1)
+}
+
+.experience:hover .coolGradient {
+  background-size: 100% 100%, 100% 100%;
+}
+

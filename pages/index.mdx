@@ -5,12 +5,26 @@ date: 2024-09-13
 ---
 
 import Icon from '../components/icon.js'
+import styles from './index.module.css';
 
 # Gavin Dhanda
 
 <h2> Hi, I'm Gavin! </h2>
 
-I'm a Junior at Brown University pursuing an Sc.B in Computer Science and an A.B. in Business Economics. I'm passionate about <b> software development</b>, <b>music</b>, and the <b>intersection of technology and finance</b>. If you have any questions or would like to connect, please reach out below!
+<p> I'm a Junior at Brown University pursuing an Sc.B in Computer Science and an A.B. in Business Economics. I'm passionate about <b> software development</b>, <b>music</b>, and the <b>intersection of technology and finance</b>. If you have any questions or would like to connect, please reach out below. </p>
+
+<div className={styles.imageRow}>
+  <div className={styles.imageContainer}>
+    <img src="/images/guitar.jpg" alt="Image 2" className={styles.secondImage}/>
+  </div>
+  <div className={styles.imageContainer}>
+    <img src="/images/ranch.jpg" alt="Image 3" className={styles.thirdImage}/>
+  </div>
+  <div className={styles.imageContainer}>
+    <img src="/images/golf.jpg" alt="Image 1" className={styles.leftImage}/>
+  </div>
+  
+</div>
 
 ---
 <div style={{ lineHeight: '0.2em' }}>

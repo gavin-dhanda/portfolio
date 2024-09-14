@@ -1,0 +1,16 @@
+.imageRow {
+  display: flex; /* Arrange images in a single row */
+  white-space: nowrap; /* Prevent wrapping to multiple lines */
+  width: 100%; /* Full width of viewport for scrolling */
+}
+
+.imageContainer {
+  margin: 5px; 
+  width: 100%; /* Width of each image */
+}
+
+.imageContainer img {
+  object-fit: cover;
+  border-radius: 14px; /* Rounded corners */
+  border: 2px solid #000000; /* Add border on hover */
+}

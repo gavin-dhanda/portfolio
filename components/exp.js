@@ -1,7 +1,9 @@
+import styles from './experience.module.css';
+
 const ExperienceBlock = ({ title, subtitle, timeframe, description  }) => {
     return (
-    <div className="experience">
-  <h2 style={{lineHeight: "0.1em"}}>{title}</h2>
+    <div className={styles.experience}>
+  <h2 style={{ marginTop: "1em" }} className={styles.coolGradient}>{title}</h2>
   <div
     style={{
       display: "flex",
