@@ -1,4 +1,4 @@
-import styles from './experience.module.css';
+import styles from './items.module.css';
 
 const ExperienceBlock = ({ title, subtitle, timeframe, description }) => {
     return (

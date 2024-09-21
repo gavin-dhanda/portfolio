@@ -1,4 +1,4 @@
-import styles from './experience.module.css';
+import styles from './items.module.css';
 
 const ProjectBlock = ({ title, subtitle, description, imagelink}) => {
     return (
