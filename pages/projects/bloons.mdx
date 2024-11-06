@@ -9,4 +9,17 @@ import ProjectPage from '../../components/proj_pages'
 
 <ProjectPage src="/images/projects/bloons.jpg" alt="Bloons TD15 Final Level Screenshot" gitLink="https://github.com/gavin-dhanda/Bloons-TD15"/>
 
-An implementation of my favorite childhood game, Bloons Tower Defense, for my CS15 final project. Includes complex levels, multiple monkeys, bloon types, upgrades, and more.
+BloonsTD15 is a custom recreation of the Bloons Tower Defense game series, developed as a CS15 final project. It features tower defense gameplay mechanics with animated monkey defenses, diverse bloon types, and strategic elements. The project is optimized for IntelliJ IDEA.
+
+<h3> Key Features </h3>
+
+<h4> Game Structure: </h4> <p> Core classes manage the layout (PaneOrganizer), game logic (BloonsGame), money tracking, and game elements like darts and bloons. </p>
+<h4> Bloon Management with LinkedList: </h4> <p> A doubly linked list stores bloons, enabling efficient reordering based on track position and flexible targeting options for monkeys. </p>
+<h4> Monkey Class Inheritance: </h4> <p> An inheritance structure for different monkey types allows shared functionality while handling unique shooting styles and upgrades. </p>
+<h4> Visuals and Animations: </h4> <p> Monkeys use composite shapes and imported images, with animations for actions like dart shooting, explosions, and bloon popping. </p>
+
+<h3> Game Mechanics </h3>
+
+- New bloons include basic colored bloons, camo and lead types, along with an "A.N.D.Y. Bloon" as a final challenge.
+- The game includes 30 increasingly challenging levels, stored in memory as a 3D array designating bloon waves and type.
+- Monkeys display a range circle that turns red when placement is restricted, providing immediate feedback.
