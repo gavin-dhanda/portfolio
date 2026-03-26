@@ -9,11 +9,26 @@
 .linkBox {
   display: flex;
   justify-content: center;
-  gap: 1em;
-  margin-bottom: -1em;
-  margin-top: -2em;
+  gap: 0.75em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
 }
 
-.linkBox a:hover {
-  color: #ff79be;
+.linkPill {
+  display: inline-block;
+  padding: 0.4em 1.1em;
+  border-radius: 999px;
+  font-size: 0.85em;
+  font-weight: 500;
+  text-decoration: none;
+  color: inherit;
+  background: rgba(150, 150, 150, 0.12);
+  border: 1px solid rgba(150, 150, 150, 0.25);
+  transition: background 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+.linkPill:hover {
+  background: rgba(150, 150, 150, 0.25);
+  border-color: rgba(150, 150, 150, 0.4);
+  transform: translateY(-1px);
 }
