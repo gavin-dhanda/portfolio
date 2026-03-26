@@ -4,7 +4,7 @@ export default function Document() {
   const meta = {
     title: 'Gavin Dhanda Software Portfolio',
     description: 'Computer Science and Business Economics @ Brown University.',
-    image: '/images/ranch.jpg',
+    image: '/images/aboutme/ranch.jpg',
   }
 
   return (
