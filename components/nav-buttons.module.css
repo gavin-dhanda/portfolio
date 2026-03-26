@@ -28,13 +28,13 @@
 }
 
 .active {
-  background: #0074de;
-  border-color: #0074de;
+  background: #00b9de;
+  border-color: #005364;
   color: #fff !important;
 }
 
 .active:hover {
-  background: #0066c5;
-  border-color: #0066c5;
+  background: #08a0bf;
+  border-color: #003742;
   color: #fff !important;
 }
