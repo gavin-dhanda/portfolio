@@ -1,0 +1,20 @@
+---
+title: Brolodex
+date: 2026/10/8
+---
+
+import ProjectPage from '../../../components/proj_pages'
+
+<ProjectPage src="/images/projects/brolodex.jpg" alt="Brolodex on iPhone: the Stay in touch home screen, a person's page and the Places map" gitLink="https://github.com/gavin-dhanda/Brolodex"/>
+
+A shared personal CRM for a small circle of friends or family. Everyone in a circle sees the same people, the same log of who last saw whom, and the same tags, and each person carries a cadence so the home screen shows who is overdue for a call. Built as a SwiftUI iPhone app on Firebase Auth and Firestore with no server code, and shipped to the circle through TestFlight.
+
+<h3> Highlights </h3>
+
+<h4> Features: </h4> <p> A Stay in touch home screen with overdue, coming-up and birthday sections, swipe-to-log for hangouts and calls, mutes that pause reminders for a month or a year, a Places map that clusters by city and resolves to street addresses, batch import from Contacts, job history, and CSV export of any filtered set of people. </p>
+
+<h4> Access control in the rules: </h4> <p> With no backend code, every permission lives in Firestore security rules: membership-only reads, a self-join and self-leave handshake so nobody can remove anyone else, and a floor that keeps a circle from being emptied. A test suite replays the app's exact write sequences against the rules in the local emulator. </p>
+
+<h4> Merging circles: </h4> <p> Joining someone else's circle merges yours into it. A pure, unit-checked planner finds likely duplicates, asks "same person?" and lets you pick field by field, and the multi-write merge is ordered so it can be resumed after a crash. </p>
+
+<h4> Design: </h4> <p> A dark "New York at night" design system with a procedurally drawn skyline behind every screen and custom controls, menus and sheets in place of the system ones. A lint script scans the views for anything that drifts from it and blocks a release when it finds one. </p>

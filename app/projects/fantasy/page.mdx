@@ -1,0 +1,20 @@
+---
+title: Fall Line Fantasy
+date: 2026/10/21
+---
+
+import ProjectPage from '../../../components/proj_pages'
+
+<ProjectPage src="/images/projects/fantasy.jpg" alt="Fall Line Fantasy on iPhone: the home screen, draft grades and a live matchup" gitLink="https://github.com/gavin-dhanda/FantasyFootball"/>
+
+A complete fantasy football platform built for a private eight-person league and run live through the 2026 NFL season. It has its own player pool, scoring engine, draft, waivers, trades and live scoring, with NFL data pulled from ESPN and every league concept computed in-house. A native SwiftUI iPhone app and a React web app share one Firebase backend.
+
+<h3> Highlights </h3>
+
+<h4> Architecture: </h4> <p> The iOS app, a Lock Screen Live Activity and the web app read Firestore through live listeners and mutate through Cloud Functions. Drafts, waivers and trades run as server-side transactions so they cannot be raced or faked, and the scoring and standings logic is written once in a pure TypeScript core shared by the backend and the web. </p>
+
+<h4> League features: </h4> <p> A live draft room with autopick and pick trading, priority waivers, trades with a shared before-and-after review, keepers, per-starter lineup lock at kickoff, live win probability, power rankings, weekly recaps, Pick-Em, self-building playoff brackets, and a Gemini-powered assistant whose suggestions do nothing until confirmed. </p>
+
+<h4> The trip: </h4> <p> The season ends with a golf weekend, so the app also holds both courses hole by hole, a caddie round drawn from the final standings, a live-scored team tournament, and a Hall of Fame that freezes every finished season. </p>
+
+<h4> Engineering: </h4> <p> Roughly 117,000 lines across Swift, TypeScript and React, with around 2,800 automated tests including emulator-backed integration suites and a Firestore rules suite. A demo environment builds a full season against local emulators and screenshots every screen; the images above come from it. </p>
